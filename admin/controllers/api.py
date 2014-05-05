@@ -137,7 +137,7 @@ class UploadLogsPage(ApiPage):
 
 class AddSmtpHost(ApiPage):
 	def get(self):
-    # s = model.SmtpServer(hostname="hostname.as.reported.by.your.server",mxname="Testing",secret_key="key")
-    # s.put()
+    s = model.SmtpServer(hostname="smtp2web.markussen.dk",mxname="Testing",secret_key="key")
+    s.put()
 		self.response.out.write("Done")
 		return
