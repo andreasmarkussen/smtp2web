@@ -37,7 +37,7 @@ class AddMappingPage(lib.BaseHandler):
     type = self.request.POST.get("type", "basic")
     if type == "basic":
       user = self.request.POST.get("user", None)
-      host = "s2w.m.ac.nz"
+      host = "smtp2web.markussen.dk"
     elif type == "domain":
       user = None
       host = self.request.POST.get("host", None)
