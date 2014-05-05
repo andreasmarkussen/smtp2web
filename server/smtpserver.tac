@@ -26,7 +26,7 @@ import smtp2web
 application = service.Application("smtp2web Service")
 
 settings = smtp2web.Settings(secret_key="",
-                             state_file="state", master_host="www.s2w.m.ac.nz")
+                             state_file="state", master_host="php-andreas-smtp.appspot.com")
 
 smtpServerFactory = smtp2web.ESMTPFactory(settings)
 smtpServerService = internet.TCPServer(2025, smtpServerFactory)
